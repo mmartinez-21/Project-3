@@ -9,5 +9,7 @@ function init(){
       position: google.maps.ControlPosition.BOTTOM_CENTER
     }
   };
+  
+  var actualMap = new google.maps.Map(object1, mapOptions);
 }
 google.maps.event.addDomListener(window, 'load', init);
