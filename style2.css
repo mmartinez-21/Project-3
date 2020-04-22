@@ -190,7 +190,7 @@ img.interest-images {
   .page-2 {
     font-family: 'PT Serif', serif;
     font-size: 25px;
-    font-style: bold;
+    font-style: normal;
     color: darkgreen;
   }
   
@@ -257,7 +257,7 @@ img.interest-images {
   
   p {
     font-family: 'PT Serif', serif;
-    font-style: none;
+    font-style: normal;
   }
   
   /* 2nd page style element */
@@ -274,7 +274,7 @@ img.interest-images {
   }
   
   #font {
-    display: content;
+    display: none;
     font-size: 40px;
     padding: 2px 2px 2px 2px;
     margin: 2px 2px 2px 2px;
