@@ -1,4 +1,4 @@
-function init(){
+function initMap(){
   var object1 = document.getElementById('myMap');
   var startingLoc = new google.maps.LatLng(41.8433677,-87.6948927);
   var mapOptions = {
@@ -12,4 +12,4 @@ function init(){
   
   var actualMap = new google.maps.Map(object1, mapOptions);
 }
-google.maps.event.addDomListener(window, 'load', init);
+google.maps.event.addDomListener(window, 'load', initMap);
