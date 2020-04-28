@@ -24,17 +24,59 @@ function initMap(){
   var targetLoc = {lat: 42.020761, lng: -87.7056351};
   var mallLoc = {lat: 42.0093022, lng: -87.714313};
   
+  //icons//
+  var icons = {
+    fitness: {
+      icon: 'images/GYMicon.png'
+    },
+    school: {
+      icon: 'images/SCHOOLicon.png'
+    },
+    food: {
+      icon: 'images/FOODicon.png'
+    }, 
+    film: {
+      icon: 'images/FILMicon.webp'
+    }
+  };
+  
+  //where the icons are being featured//
+  var features = [
+    {position: new google.maps.LatLng(42.0240192, -87.7030869), type: 'fitness'},
+    {position: new google.maps.LatLng(41.9445343, -87.6915331), type: 'school'},
+    {position: new google.maps.LatLng(42.018304, -87.6726844), type: 'school'},
+    {position: new google.maps.LatLng(41.834681, -87.6262585), type: 'school'},
+    {position: new google.maps.LatLng(42.0490201, -87.6851185), type: 'film'},
+    {position: new google.maps.LatLng(42.0403797, -87.7176689), type: 'food'},
+    {position: new google.maps.LatLng(42.0144689, -87.6954727), type: 'school'},
+    {position: new google.maps.LatLng(42.0124958, -87.6914459), type: 'fitness'},
+    {position: new google.maps.LatLng(42.020761, -87.7056351), type: 'food'},
+    {position: new google.maps.LatLng(42.0093022, -87.714313), type: 'food'}
+    ];
+  
+  
   //Actually putting the marker on to the map// 
-  var runMark = new google.maps.Marker({position: runLoc, map: actualMap});
-  var laneMark = new google.maps.Marker({position: laneLoc, map: actualMap});
-  var redlineMark = new google.maps.Marker({position: redlineLoc, map: actualMap});
-  var iitMark = new google.maps.Marker({position: iitLoc, map: actualMap});
-  var movieMark = new google.maps.Marker({position: movieLoc, map: actualMap});
-  var pizzaMark = new google.maps.Marker({position: pizzaLoc, map: actualMap});
-  var elemPparkMark = new google.maps.Marker({position: elemPparkLoc, map: actualMap});
-  var gymMark = new google.maps.Marker({position: gymLoc, map: actualMap});
-  var targetMark = new google.maps.Marker({position: targetLoc, map: actualMap});
-  var mallMark = new google.maps.Marker({position: mallLoc, map: actualMap});
+  var runMark = new google.maps.Marker({position: features[0].position, 
+  icon: icons[features[0].type].icon, map: actualMap});
+  var laneMark = new google.maps.Marker({position: features[1].position, 
+  icon: icons[features[1].type].icon, map: actualMap});
+  var redlineMark = new google.maps.Marker({position: features[2].position, 
+  icon: icons[features[2].type].icon, map: actualMap});
+  var iitMark = new google.maps.Marker({position: features[3].position, 
+  icon: icons[features[3].type].icon, map: actualMap});
+  var movieMark = new google.maps.Marker({position: features[4].position, 
+  icon: icons[features[4].type].icon, map: actualMap});
+  var pizzaMark = new google.maps.Marker({position: features[5].position, 
+  icon: icons[features[5].type].icon, map: actualMap});
+  var elemPparkMark = new google.maps.Marker({position: features[6].position, 
+  icon: icons[features[6].type].icon, map: actualMap});
+  var gymMark = new google.maps.Marker({position: features[7].position, 
+  icon: icons[features[7].type].icon, map: actualMap});
+  var targetMark = new google.maps.Marker({position: features[8].position, 
+  icon: icons[features[8].type].icon, map: actualMap});
+  var mallMark = new google.maps.Marker({position: features[9].position, 
+  icon: icons[features[9].type].icon, map: actualMap});
+  
   
   //Content that will be inside the pop up windows for each marker//
   var contentString1 = '<h1>James Park</h1>' +
