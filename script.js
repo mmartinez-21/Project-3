@@ -27,16 +27,16 @@ function initMap(){
   //icons//
   var icons = {
     fitness: {
-      icon: 'images/GYMicon.png'
+      icon: 'images/GYMiconresized.png'
     },
     school: {
-      icon: 'images/SCHOOLicon.png'
+      icon: 'images/SCHOOLiconresized.png'
     },
     food: {
-      icon: 'images/FOODicon.png'
+      icon: 'images/FOODiconresized.png'
     }, 
     film: {
-      icon: 'images/FILMicon.webp'
+      icon: 'images/FILMiconresized.jpg'
     }
   };
   
