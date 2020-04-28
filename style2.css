@@ -361,7 +361,7 @@ img.interest-images {
   border-style: solid;
   border-color:white;
 }
-html, body {
+.mapper, html, body {
   height: 100%;
   margin: 0;
   padding: 0;
