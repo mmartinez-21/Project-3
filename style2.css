@@ -348,12 +348,24 @@ img.interest-images {
   border-radius: 8px;
 }
 
+#mapHeader {
+  font-size: 25px;
+  font-family: 'Bebas Neue', cursive;
+  color: white;
+}
 #myMap {
-  height:100%;
-  width: 100%;
+  height:90%;
+  margin: 0 5px 20px 5px;
+  padding: 5px;
+  background-color: black;
+  border-style: solid;
+  border-color:white;
 }
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
+  background-color: black;
+  border-style: solid;
+  border-color:white;
 }
