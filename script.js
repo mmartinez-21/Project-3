@@ -11,7 +11,7 @@ function initMap(){
   };
   
   var actualMap = new google.maps.Map(object1, mapOptions);
-}
+
   //marker locations//
   var runLoc = {lat: 42.0240192, lng: -87.7030869};
   var laneLoc = {lat: 41.9445343, lng:-87.6915331};
@@ -133,6 +133,6 @@ function initMap(){
   mallMark.addListener('click', function(){
     infowindow10.open(actualMap, mallMark);
   })
-  
+}
   
 google.maps.event.addDomListener(window, 'load', initMap);
