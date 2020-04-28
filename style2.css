@@ -365,7 +365,8 @@ img.interest-images {
   height: 100%;
   margin: 0;
   padding: 0;
-  background-color: black;
-  border-style: solid;
-  border-color:white;
+}
+
+.backgrounder {
+  background-color:black;
 }
